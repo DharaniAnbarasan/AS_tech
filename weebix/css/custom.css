@@ -36,10 +36,10 @@
 /************************************/
 
 :root{
-	--primary-color		: #15161B;
+	--primary-color		: #08265B;
 	--secondary-color	: #F7F8FD;
 	--text-color		: #9C9FA6;
-	--accent-color		: #5D56F1;
+	--accent-color		: #FFA500;
 	--white-color		: #FFFFFF;
 	--divider-color		: #E1E4EB;
 	--error-color		: rgb(230, 87, 87);
@@ -268,7 +268,7 @@ body{
 	right: 0;
 	bottom: 0;
 	z-index: 1000;
-	background-color: var(--accent-color);
+	background-color: rgba(3, 4, 80, 0.3);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -287,7 +287,7 @@ body{
 }
 
 .loading{
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	border-color: transparent var(--white-color) transparent var(--white-color);
 	animation: rotate-loading 1.5s linear 0s infinite normal;
 	transform-origin: 50% 50%;
@@ -397,7 +397,7 @@ header.main-header .header-sticky.active{
 }
 
 .navbar-brand img{
-	min-width: 140px;
+	max-width: 140px;
 }
 
 .main-menu .nav-menu-wrapper{
@@ -594,7 +594,7 @@ header.main-header .header-sticky.active{
 .hero{
 	position: relative;
 	background: var(--secondary-color) url(../images/hero-bg.png) no-repeat bottom center;
-	padding: 140px 0;
+	padding: 100px 0;
 }
 
 .hero-content{
@@ -1162,6 +1162,7 @@ header.main-header .header-sticky.active{
 
 .footer-about img{
 	margin-bottom: 30px;
+    max-width: 140px;
 }
 
 .footer-about ul{
